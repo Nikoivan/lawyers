@@ -1,56 +1,56 @@
 @font-face {
 	font-family: 'Buyan';
-	src: url(/fonts/BuyanRegular.ttf);
+	src: url('../fonts/BuyanRegular.ttf');
 }
 
 @font-face {
 	font-family: 'BuyanBold';
-	src: url(/fonts/BuyanBold.ttf);
+	src: url('../fonts/BuyanBold.ttf');
 }
 
 @font-face {
 	font-family: 'BuyanThin';
-	src: url(/fonts/BuyanThin.ttf);
+	src: url('../fonts/BuyanThin.ttf');
 }
 
 @font-face {
 	font-family: 'Caladea';
-	src: url(/fonts/Caladea-Regular.ttf);
+	src: url('../fonts/Caladea-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Oswald';
-	src: url(/fonts/Oswald.ttf);
+	src: url('../fonts/Oswald.ttf');
 }
 
 @font-face {
 	font-family: 'Forte';
-	src: url(/fonts/Forte.ttf);
+	src: url('../fonts/Forte.ttf');
 }
 
 @font-face {
 	font-family: 'BadScript';
-	src: url(/fonts/BadScript-Regular.ttf);
+	src: url('../fonts/BadScript-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Montserat-SemiBold';
-	src: url(/fonts/Montserrat-SemiBold.ttf);
+	src: url('../fonts/Montserrat-SemiBold.ttf');
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url(/fonts/Raleway-Regular.ttf);
+	src: url('../fonts/Raleway-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Raleway-Medium';
-	src: url(/fonts/Raleway-Medium.ttf);
+	src: url('../fonts/Raleway-Medium.ttf');
 }
 
 @font-face {
 	font-family: 'Raleway-SemiBold';
-	src: url(/fonts/Raleway-SemiBold.ttf);
+	src: url('../fonts/Raleway-SemiBold.ttf');
 }
 
 ul {
