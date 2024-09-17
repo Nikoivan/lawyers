@@ -34,6 +34,11 @@
 }
 
 @font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
 	font-family: 'Montserat-SemiBold';
 	src: url('../fonts/Montserrat-SemiBold.ttf');
 }
@@ -89,6 +94,10 @@ a {
 
 .bad-script {
 	font-family: BadScript;
+}
+
+.montserat {
+	font-family: Montserrat;
 }
 
 .montserat__semi-bold {
@@ -374,7 +383,7 @@ a {
 }
 
 .about-us__item-header_type_revert {
-	column-gap: 85px;
+	column-gap: 105px;
 	justify-content: flex-start;
 }
 
@@ -423,7 +432,7 @@ a {
 .about-us__item-description h3 {
 	margin: 2px 0 0;
 	font-size: 15px;
-	letter-spacing: 0.3px;
+	letter-spacing: -0.3px;
 }
 
 .about-us__item-content {
@@ -438,10 +447,16 @@ a {
 }
 
 .about-us__image {
+	width: 120%;
 	z-index: 2;
 	position: absolute;
 	top: -55px;
 	left: -15px;
+}
+
+.about-us__image_type_revert {
+	top: -67px;
+	left: -18px;
 }
 
 .about-us__adv-list {
@@ -467,6 +482,91 @@ a {
 .about-us__additional p {
 	font-size: 13px;
 	letter-spacing: 0.5px;
+}
+
+.double-title__wrap {
+	text-align: center;
+}
+
+.double-title__primary-wrap,
+.double-title__secondary-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.double-title__primary-title {
+	margin: 0;
+	color: #6ca7ff59;
+	font-size: 35px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.double-title__primary-deco {
+	display: block;
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #d7a47c;
+}
+
+.double-title__secondary-wrap {
+	margin-top: -21px;
+	justify-content: space-between;
+}
+
+.double-title__secondary-title {
+	margin-right: -42px;
+	display: block;
+	font-size: 20px;
+	font-weight: 500;
+	color: #484746;
+	text-transform: uppercase;
+}
+
+.double-title__secondary-deco {
+	display: block;
+	content: '';
+	width: 45px;
+	height: 1px;
+	background-color: #484746;
+}
+
+.our-practice {
+	margin-top: 0;
+}
+
+.our-practice__image {
+	margin-top: -5px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.our-practice__issue {
+	padding: 0 15px;
+	background-color: #f4eff6;
+}
+
+.our-practice__issue-header {
+	width: 200px;
+	padding: 13px 8px 4px;
+	border-bottom: 1px solid #000;
+}
+
+.our-practice__issue-title {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.our-practice__issue-content {
+	margin: 0;
+	padding: 11px 6px;
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
