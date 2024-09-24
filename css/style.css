@@ -133,9 +133,8 @@ a {
 }
 
 .header {
-	position: fixed;
 	box-sizing: border-box;
-
+	overflow: hidden;
 	background-color: rgb(48, 47, 47);
 	background-image: url('../images/backgrounds/bg-header-mobile.jpg');
 	background-size: cover;
@@ -169,8 +168,16 @@ a {
 	display: none;
 }
 
+.menu {
+	display: none;
+}
+
+.popup__container {
+	display: none;
+}
+
 .main {
-	padding: 60px 0 0;
+	padding: 0;
 }
 
 .section__authors {
@@ -805,6 +812,7 @@ a {
 
 .contact-form__input {
 	width: 100%;
+	box-sizing: border-box;
 	padding: 7px 8px;
 	display: block;
 	border: none;
@@ -892,7 +900,7 @@ a {
 	font-size: 12px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 	.navbar__wrap .menu {
 		display: none;
 	}
@@ -922,14 +930,19 @@ a {
 
 	.popup {
 		position: fixed;
-		top: 75px;
+		top: 0;
 		left: -100%;
 		width: 100%;
 		height: 100%;
 		background-color: #fff;
 		z-index: 100;
 		display: flex;
+		flex-direction: column;
 		transition: 0.3s;
+		background-image: url('../images/backgrounds/menu-mobile-bg.jpg');
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.popup.open {
@@ -943,7 +956,6 @@ a {
 		flex-direction: column;
 		align-items: center;
 		justify-content: start;
-		padding: 50px 0;
 		overflow: auto;
 	}
 
@@ -956,13 +968,21 @@ a {
 		display: flex;
 		justify-content: center;
 		padding: 20px 0;
-		font-size: 20px;
+		font-family: Montserat-SemiBold;
+		font-size: 17px;
 		font-weight: bold;
 		color: #3f3f3f;
 	}
 
 	.popup .menu > li > a:hover {
 		background-color: rgba(122, 82, 179, 0.1);
+	}
+
+	.popup__container.active {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 60px;
 	}
 
 	.hamb__field.active .bar:nth-child(2) {
