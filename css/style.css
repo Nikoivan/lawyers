@@ -176,6 +176,20 @@ a {
 	display: none;
 }
 
+.form {
+	display: none;
+}
+
+.form.active {
+}
+
+.popup__container.active {
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 57px;
+}
+
 .main {
 	padding: 0;
 }
@@ -299,6 +313,10 @@ a {
 	background-image: url('../images/backgrounds/mb-bg-main.jpg');
 	background-position: top center;
 	background-size: contain;
+}
+
+.section__main-content_page_contacts {
+	background-position: -1000px center;
 }
 
 .slider {
@@ -682,6 +700,11 @@ a {
 	min-height: 96px;
 }
 
+.contacts {
+	margin-top: 35px;
+	background-color: #fff;
+}
+
 .contacts-main__content {
 	margin-top: 27px;
 	padding: 21px 15px;
@@ -950,12 +973,14 @@ a {
 	}
 
 	.popup .menu {
+		margin: 128px 0 0 -22px;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: start;
+		gap: 12px;
 		overflow: auto;
 	}
 
@@ -972,17 +997,11 @@ a {
 		font-size: 17px;
 		font-weight: bold;
 		color: #3f3f3f;
+		text-transform: uppercase;
 	}
 
 	.popup .menu > li > a:hover {
 		background-color: rgba(122, 82, 179, 0.1);
-	}
-
-	.popup__container.active {
-		display: block;
-		position: absolute;
-		top: 10px;
-		right: 60px;
 	}
 
 	.hamb__field.active .bar:nth-child(2) {

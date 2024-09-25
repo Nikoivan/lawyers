@@ -22,15 +22,18 @@ function renderPopup() {
 	popup.appendChild(menu);
 }
 
-const links = [...menu.children, closeBtn];
+const links = [...menu.children];
 
 links.forEach((link) => {
 	link.addEventListener('click', closeOnClick);
 });
 
-function closeOnClick(e) {
+closeBtn.addEventListener('click', (e) => {
 	e.preventDefault();
+	closeOnClick();
+});
 
+function closeOnClick() {
 	popup.classList.remove('open');
 	popupContainer.classList.remove('active');
 	body.classList.remove('noscroll');
