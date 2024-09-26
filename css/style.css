@@ -325,6 +325,31 @@ a {
 	background-size: contain;
 }
 
+.specializations {
+	padding-top: 35px;
+}
+
+.specializations__info-wrap {
+	margin-top: 30px;
+}
+
+.specializations__description {
+	padding: 0 25px;
+	text-align: center;
+	font-family: Forte;
+	font-weight: 600;
+	font-style: italic;
+	color: #3d68f3;
+	font-size: 20px;
+	letter-spacing: 0.3px;
+	line-height: 1.35;
+	margin-top: 0px;
+}
+
+.specializations__image {
+	width: 100%;
+}
+
 .section__main-content_page_contacts {
 	background-position: -1000px center;
 }
@@ -621,7 +646,9 @@ a {
 }
 
 .double-title__secondary-wrap {
+	position: relative;
 	margin-top: -21px;
+	z-index: 19;
 }
 
 .double-title__secondary-title {
@@ -712,8 +739,12 @@ a {
 }
 
 .contacts {
-	margin-top: 35px;
+	margin-top: 0;
+	padding-top: 32px;
 	background-color: #fff;
+	background-image: url('../images/backgrounds/contacts-bg-mb.jpg');
+	background-size: contain;
+	background-position: top center;
 }
 
 .contacts-main__content {
