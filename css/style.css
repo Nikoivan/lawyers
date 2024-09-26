@@ -58,6 +58,13 @@
 	src: url('../fonts/Raleway-SemiBold.ttf');
 }
 
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -119,7 +126,6 @@ a {
 .page__container {
 	margin: 0 auto;
 	max-width: 800px;
-	min-width: 375px;
 }
 
 .button_type_standard {
@@ -133,6 +139,9 @@ a {
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
 	box-sizing: border-box;
 	overflow: hidden;
 	background-color: rgb(48, 47, 47);
@@ -149,7 +158,7 @@ a {
 }
 
 .nav__wrap {
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -191,6 +200,7 @@ a {
 }
 
 .main {
+	margin-top: 63px;
 	padding: 0;
 }
 
@@ -615,6 +625,7 @@ a {
 }
 
 .double-title__secondary-title {
+	width: 100%;
 	margin-right: -42px;
 	display: block;
 	font-size: 20px;
