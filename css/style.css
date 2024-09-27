@@ -350,6 +350,43 @@ a {
 	width: 100%;
 }
 
+.specializations__content {
+	position: relative;
+	z-index: 2;
+	margin: -35px 10px 0 0;
+	padding: 8px 15px;
+	color: #484746;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 5px 5px 8px 0px #ffffff8c;
+	line-height: 1.25;
+}
+
+.deco-lines {
+	width: 100%;
+	height: 10px;
+	border-bottom: 1px solid #715641;
+}
+
+.deco-lines__primary {
+	display: block;
+	content: '';
+	margin: 15px auto 0;
+	background: linear-gradient(
+		180deg,
+		#715641 0%,
+		#95633c 14%,
+		#9e6940 30%,
+		#ad7a52 44%,
+		#bf8a60 60%,
+		#c28e66 75%,
+		#cd9b75 90%,
+		#d7a47c 100%
+	);
+	width: 200px;
+	height: 1px;
+}
+
 .section__main-content_page_contacts {
 	background-position: -1000px center;
 }
@@ -357,6 +394,10 @@ a {
 .slider {
 	padding: 25px 15px 7px;
 	border-bottom: 1px solid #715641;
+}
+
+.slider_page_specializations {
+	border-bottom: none;
 }
 
 .slider__list {
@@ -428,6 +469,10 @@ a {
 
 .about-us {
 	padding: 5px 0;
+}
+
+.about-us_page_specializations {
+	margin-top: 5px;
 }
 
 .about-us__title-wrap {
@@ -800,6 +845,10 @@ a {
 .contact-form {
 	margin: 9px 0 0;
 	text-align: center;
+}
+
+.contact-form_page_specializations {
+	margin-top: 17px;
 }
 
 .contact-form__deco-line_type_primary {
