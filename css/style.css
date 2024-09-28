@@ -140,8 +140,6 @@ a {
 
 .header {
 	position: fixed;
-	top: 0;
-	left: 0;
 	box-sizing: border-box;
 	overflow: hidden;
 	background-color: rgb(48, 47, 47);
@@ -155,6 +153,7 @@ a {
 	bottom: 0;
 	left: 0;
 	z-index: 9;
+	box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .nav__wrap {
@@ -320,6 +319,7 @@ a {
 }
 
 .section__main-content {
+	padding-bottom: 35px;
 	background-image: url('../images/backgrounds/mb-bg-main.jpg');
 	background-position: top center;
 	background-size: contain;
@@ -722,16 +722,54 @@ a {
 	margin-top: 0;
 }
 
+.practice {
+	padding-top: 17px;
+}
+
+.our-practice__description-content {
+	padding: 13px 15px 0 44px;
+}
+
+.our-practive__content_page_practice {
+	margin-top: -22px;
+}
+
 .our-practice__image {
 	margin-top: -27px;
 	width: 100%;
 	object-fit: cover;
 }
 
+.our-practice__secondary-description,
+.our-practice__description-content {
+	font-size: 15px;
+	font-weight: 300;
+	color: #484746;
+	line-height: 1.32;
+	text-align: justify;
+}
+
+.our-practice__secondary-description {
+	margin-top: 12px;
+	padding: 0 15px;
+}
+
 .our-practice__issue {
 	margin: 0 15px;
 	padding-bottom: 5px;
 	background-color: #f4eff6;
+}
+
+.our-practice_color_green {
+	background-color: #ebf2e2;
+}
+
+.our-practice__issue_page_practice {
+	margin-top: 27px;
+}
+
+.our-practice_with_margin {
+	margin-top: 16px;
 }
 
 .our-practice__issue-header {
@@ -851,6 +889,10 @@ a {
 	margin-top: 17px;
 }
 
+.contact-form_page_practice {
+	margin-top: 35px;
+}
+
 .contact-form__deco-line_type_primary {
 	margin-left: auto;
 	display: block;
@@ -944,7 +986,6 @@ a {
 }
 
 .footer {
-	margin-top: 34px;
 	padding: 17px 8px 30px;
 	background-color: #1b1a1a;
 	background-image: url('../images/backgrounds/mb-bg-footer.jpg');
