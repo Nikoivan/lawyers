@@ -1205,7 +1205,7 @@ a {
 }
 
 .callform {
-	position: relative;
+	position: absolute;
 	background-color: #fff;
 	top: 0;
 	right: 0;
@@ -1213,15 +1213,18 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 1;
 }
 
 .callform__wrapper {
-	position: absolute;
-
+	width: 100%;
+	height: 100%;
+	padding-bottom: 30px;
+	background-color: #fff;
 	background-image: url('../images/backgrounds/popup-4-bg.jpg');
 	background-position: top center;
 	background-size: cover;
-	z-index: 99;
+	z-index: 100;
 	color: #484746;
 }
 
@@ -1247,4 +1250,47 @@ a {
 	color: #484746;
 	font-size: 35px;
 	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.callform__description-container {
+	padding: 0 30px;
+	text-align: center;
+	font-size: 11px;
+}
+
+.callform__description {
+	margin-top: 8px;
+}
+
+.callform__form {
+	margin-top: 30px;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.callform__input {
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding: 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid #715641;
+	border-radius: 5px;
+}
+
+.callform__input_type_multiline {
+	height: 88px;
+	color: gray;
+}
+
+.callform__btn_type_action {
+	margin-top: 48px;
+	width: 305px;
+	padding: 13px;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #3d68f3;
+	box-shadow: 0px 4px 4px 0px #0000001a;
 }
