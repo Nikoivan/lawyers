@@ -1207,7 +1207,6 @@ a {
 .callform {
 	display: none;
 	position: fixed;
-	background-color: #fff;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1217,23 +1216,66 @@ a {
 	z-index: 10;
 }
 
+.callform:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 11;
+}
+
 .callform.active {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .callform__wrapper {
+	position: relative;
 	width: 100%;
 	height: 100%;
+	max-height: 745px;
 	padding-bottom: 30px;
 	background-color: #fff;
 	background-image: url('../images/backgrounds/popup-4-bg.jpg');
 	background-position: top center;
 	background-size: cover;
-	z-index: 100;
 	color: #484746;
+	z-index: 12;
+	animation-name: close;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
 }
 
-.callform__btn_type_close {
+.callform__wrapper_type_success {
+	display: none;
+	position: relative;
+	width: 375px;
+	height: 360px;
+	z-index: 12;
+	background-image: url('../images/backgrounds/success-bg.jpg');
+	text-align: center;
+	animation-name: close;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+.callform__wrapper.active,
+.callform__wrapper_type_success.active {
+	display: block;
+	animation-name: open;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+.callform__btn_type_close,
+.callform__success-btn_type_close {
 	background-color: #ffffff00;
 	border: none;
 }
@@ -1258,6 +1300,12 @@ a {
 	margin-bottom: 0;
 }
 
+.callform__title_type_secondary {
+	margin-top: 60px;
+	font-size: 25px;
+	font-weight: 400;
+}
+
 .callform__description-container {
 	padding: 0 30px;
 	text-align: center;
@@ -1266,6 +1314,18 @@ a {
 
 .callform__description {
 	margin-top: 8px;
+}
+
+.callform__description-content_type_secondary {
+	margin-top: 37px;
+	padding: 0 55px;
+	color: #484746;
+	font-size: 17px;
+	line-height: 1.45;
+}
+
+.callform__image_type_icon {
+	margin-top: 15px;
 }
 
 .callform__form {
@@ -1298,4 +1358,22 @@ a {
 	color: #fff;
 	background-color: #3d68f3;
 	box-shadow: 0px 4px 4px 0px #0000001a;
+}
+
+@keyframes open {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes close {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
 }
