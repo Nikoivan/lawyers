@@ -63,8 +63,8 @@ class CallForm {
 		this.successWrap.classList.add('active');
 
 		setTimeout(() => {
-			this.handleCloseSuccessWrap.call(this);
-		}, 1500);
+			this.handleCloseSuccessWrap();
+		}, 3000);
 	}
 
 	handleCloseSuccessWrap(e) {
@@ -81,7 +81,10 @@ class CallForm {
 		e.preventDefault();
 
 		this.callFormWrap.classList.remove('active');
-		this.successWrap.classList.add('active');
+
+		setTimeout(() => {
+			this.openSuccessWrap();
+		}, 500);
 	}
 }
 
