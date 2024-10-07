@@ -439,16 +439,20 @@ a {
 }
 
 .slider {
+	margin: 0 auto;
 	box-sizing: border-box;
 	width: 100%;
+
 	border-bottom: 1px solid #715641;
 }
 
 .slider__wrap {
+	box-sizing: border-box;
 	margin: 0 auto;
 	width: 100%;
+	max-width: 381px;
 	overflow: hidden;
-	height: 200px;
+	height: 232px;
 	padding: 25px 15px 7px;
 }
 

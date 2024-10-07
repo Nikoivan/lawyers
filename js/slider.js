@@ -5,6 +5,7 @@ class Slider {
 			this.sliderList = document.querySelector('.slider__list');
 			this.items = document.querySelectorAll('.slider__item');
 			this.count = 0;
+			this.timeoutId;
 			this.width;
 
 			this.init = this.init.bind(this);
@@ -18,7 +19,7 @@ class Slider {
 	}
 
 	init() {
-		this.width = this.slider.offsetWidth / 2 - 21;
+		this.width = this.slider.offsetWidth / 2 + 1;
 		this.sliderList.style.width = this.width * this.items.length + 'px';
 
 		this.items.forEach((item) => {
@@ -33,6 +34,7 @@ class Slider {
 	}
 
 	nextSlide() {
+		window.clearTimeout(this.timeoutId);
 		this.count++;
 
 		if (this.count >= this.items.length - 1) {
@@ -41,7 +43,7 @@ class Slider {
 
 		this.rollSlider();
 
-		setTimeout(() => {
+		this.timeoutId = setTimeout(() => {
 			this.nextSlide();
 		}, 3000);
 	}
