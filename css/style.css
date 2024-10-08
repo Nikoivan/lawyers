@@ -1271,7 +1271,7 @@ a {
 
 .callform__wrapper_type_success {
 	display: none;
-	position: relative;
+	position: absolute;
 	width: 375px;
 	height: 360px;
 	z-index: 12;
