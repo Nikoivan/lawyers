@@ -385,7 +385,7 @@ a {
 	text-align: center;
 	font-family: Forte;
 	font-weight: 600;
-	font-style: italic;
+	/* font-style: italic; */
 	color: #3d68f3;
 	font-size: 20px;
 	letter-spacing: 0.3px;
@@ -545,7 +545,7 @@ a {
 
 .about-us__title {
 	font-family: Forte;
-	font-style: italic;
+	/* font-style: italic; */
 	color: #3d68f3;
 	font-size: 14px;
 	letter-spacing: 0.3px;
