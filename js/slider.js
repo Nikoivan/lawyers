@@ -2,6 +2,10 @@ class Slider {
 	constructor() {
 		document.addEventListener('DOMContentLoaded', () => {
 			this.slider = document.querySelector('.slider__wrap');
+			const { width } = this.slider.getBoundingClientRect();
+
+			if (width && width > 1000) return;
+
 			this.sliderList = document.querySelector('.slider__list');
 			this.items = document.querySelectorAll('.slider__item');
 			this.count = 0;
