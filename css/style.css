@@ -1560,7 +1560,7 @@ a {
 	}
 
 	.authors__contact-form {
-		margin-top: -156px;
+		margin-top: 10px;
 	}
 
 	.authors__names {
@@ -1836,6 +1836,73 @@ a {
 
 	.about-us__item-content_type_second {
 		padding-left: 70px;
+	}
+
+	.about-us__additional {
+		margin-top: 10px;
+		padding: 0 80px;
+	}
+
+	.about-us__additional p {
+		font-size: 35px;
+		letter-spacing: 2px;
+	}
+
+	.our-practice {
+		margin-top: 59px;
+	}
+
+	.our-practice__content {
+		margin-top: 73px;
+
+		display: flex;
+		column-gap: 30px;
+	}
+
+	.our-practice__image {
+		width: 40%;
+	}
+
+	.our-practice__issue {
+		margin-top: 26px;
+	}
+
+	.our-practice__issue:first-child {
+		margin-top: 0;
+	}
+
+	.our-practice__issue-header {
+		padding-bottom: 10px;
+	}
+
+	.our-practice__issue-title {
+		font-size: 25px;
+	}
+
+	.our-practice__issue-content {
+		margin-top: 5px;
+		padding: 5px 90px 2px 10px;
+		font-size: 20px;
+	}
+
+	.our-practice__issue-footer {
+		position: relative;
+	}
+
+	.our-practice__issue-link {
+		position: absolute;
+		right: 66px;
+		bottom: -35px;
+		padding: 13px 52px;
+		background-color: #448fff;
+		font-size: 20px;
+		color: #fff;
+		border-radius: 5px;
+	}
+
+	.our-practice__btn {
+		font-size: 20px;
+		padding: 11px 75px;
 	}
 }
 
