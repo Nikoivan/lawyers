@@ -838,6 +838,10 @@ a {
 	width: 100px;
 }
 
+.triple-title {
+	display: none;
+}
+
 .our-practice {
 	margin-top: 0;
 }
@@ -1660,6 +1664,10 @@ a {
 		margin-top: -48px;
 	}
 
+	.double-title__wrap {
+		display: none;
+	}
+
 	.triple-title {
 		display: flex;
 		align-items: center;
@@ -1856,11 +1864,17 @@ a {
 		margin-top: 73px;
 
 		display: flex;
-		column-gap: 30px;
+		column-gap: 5px;
 	}
 
 	.our-practice__image {
-		width: 40%;
+		display: none;
+	}
+
+	.our-practice__image_type_desktop {
+		margin-top: -88px;
+		width: 42%;
+		display: block;
 	}
 
 	.our-practice__issue {
@@ -1902,7 +1916,37 @@ a {
 
 	.our-practice__btn {
 		font-size: 20px;
-		padding: 11px 75px;
+		padding: 15px 75px;
+	}
+
+	.our-practice__footer {
+		margin-top: 85px;
+	}
+
+	.feedbacks-main {
+		margin-top: 82px;
+	}
+
+	.contacts-main {
+		margin-top: 45px;
+	}
+
+	.contacts-main__content {
+		padding: 30px 15px;
+		background-image: url('/images/backgrounds/bg-main-contacts-desktop.jpg');
+	}
+
+	.contacts-main__content-title {
+		margin-top: 36px;
+	}
+
+	.contacts-main__content-subtitle {
+		font-size: 40px;
+	}
+
+	.contacts-main__content-item {
+		margin-top: 25px;
+		font-size: 25px;
 	}
 }
 
